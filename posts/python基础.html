@@ -23,7 +23,7 @@
 
 
   
-  <title>Category - Welcome to Henry&#39;s world</title>
+  <title>python基础 - Welcome to Henry&#39;s world</title>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -80,31 +80,48 @@
       <div id="main">
         <div class="row py-5">
           <div class="col">
-            
+            <div class="row">
+  <div class="left-content">
+    <article class="post-wrapper markdown-body">
+  <h2 class="post-title">
+    python基础
+  </h2>
+  <div class="post-meta">
+    <time datetime="Invalid date Invalid date ">2023-09-05</time>
+    
+    
+       
+    
+    
+      
+        <a class="tag" href="/tags/python/">python</a> 
+       
+    
+    
+  </div>
+  
+  <div id="content">
+    <ul>
+<li>定义tuple后，**<em>若tuple中只有一个元素，需要加一个逗号</em>** 「**_,_** 」，如果不加逗号的话，括号将二义性的表示数学公式中的括号，造成歧义<blockquote>
+<p>&gt;&gt;&gt; t &#x3D; (1,) —— 输出为 (1,)<br>  &gt;&gt;&gt; t &#x3D; (1) —— 输出为 1</p>
+</blockquote>
+</li>
+<li>定义默认参数一定要指向不变对象<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def tt(a = []):</span><br><span class="line">    a.append(&#x27;tt&#x27;)</span><br><span class="line">    return a</span><br><span class="line"></span><br><span class="line">tt()，tt()，tt()</span><br><span class="line">print(tt())     #输出为[&#x27;tt&#x27;, &#x27;tt&#x27;, &#x27;tt&#x27;, &#x27;tt&#x27;]</span><br><span class="line">🔺修改如下：</span><br><span class="line">def tt(a = None):</span><br><span class="line">    if a is None:</span><br><span class="line">        a = []</span><br><span class="line">    a.append(&#x27;tt&#x27;)</span><br><span class="line">    return a</span><br></pre></td></tr></table></figure></li>
+<li>参数讨论（一共5个，位置参数，默认参数）<br>  <code>*args</code>是可变参数，args接收的是一个tuple；<br>  <code>**kw</code>是关键字参数，kw接收的是一个dict。<ul>
+<li><strong>可变参数</strong>:形如<code>def calc(*numbers)</code>，传入参数是可变的含0个或者无数个（这些可变参数在调用时自动组装为一个tuple）</li>
+<li><strong>关键字参数</strong> 形如<code>def person(name, age, **kw)</code>，允许传入0个或者任意个<em>含参数名的参数</em>，例如<code>person(&quot;Henry&quot;, &quot;25&quot;, &quot;city&quot; = &quot;上海&quot;)</code>，传入的参数在调用时会被组成一个dict</li>
+<li><strong>命名关键字参数</strong> <code>def person(name, age, *, city=&#39;Beijing&#39;, job)</code>，其中*后面的关键字参数一定要有，而其他调用者传入的参数可能并不被关心</li>
+</ul>
+</li>
+</ul>
 
-<div class="categories-wrapper">
-  <h2 class="list-header">2 Categories </h2>
-  <ul class="list-group category-wrapper">
-    
-      <li class="list-group-item">
-        <a class="category" href="/categories/hexo/">
-          hexo
-        </a>
-        <a class="category-count" href="/categories/hexo/">
-          1
-        </a>
-      </li>
-    
-      <li class="list-group-item">
-        <a class="category" href="/categories/hexo/theme/">
-          theme
-        </a>
-        <a class="category-count" href="/categories/hexo/theme/">
-          1
-        </a>
-      </li>
-     
-  </ul>
+  </div>
+
+</article>
+  </div>
+  <div class="right-content">
+    <div id="toc" class="toc-wrapper"></div>
+  <div>
 </div>
 
 

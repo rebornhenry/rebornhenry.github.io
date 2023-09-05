@@ -23,7 +23,7 @@
 
 
   
-  <title>Hello World - Welcome to Henry&#39;s world</title>
+  <title>hexo-theme-Peomas - Welcome to Henry&#39;s world</title>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -33,7 +33,7 @@
   <div class="container">
     <div class="mark-wrapper">
        
-      <div class="title-mark">Peomas</div>
+      <div class="title-mark">广告位招租,有意者email联系</div>
     </div>
   
     <button id="menu-btn" class="btn menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
@@ -84,12 +84,16 @@
   <div class="left-content">
     <article class="post-wrapper markdown-body">
   <h2 class="post-title">
-    Hello World
+    hexo-theme-Peomas
   </h2>
   <div class="post-meta">
-    <time datetime="Invalid date Invalid date ">2023-04-06</time>
+    <time datetime="Invalid date Invalid date ">2023-06-05</time>
     
     
+      
+        <a class="tag" href="/categories/hexo/">hexo</a> 
+      
+        <a class="tag" href="/categories/hexo/theme/">theme</a> 
        
     
     
@@ -99,19 +103,17 @@
   </div>
   
   <div id="content">
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>hexo主题提供了很多，个人最终选择了Peomas这个主题，同时原作者<strong>quick start中存在一点问题</strong>，对不熟悉html语法的我十分的不太友好，故在此处作一定记录方便以后也想用该主题的其他朋友们。</p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol>
+<li><p>_config.yml一共有两个，一个位于根目录下，一个位于个人选用的主题目录中（如下图）——<strong>quickstart中的提供的参数填入主题目录下的_configyml文件中</strong></p>
+<img src="/posts/hexo-theme-Peomas/root_config.jpg" class="">
+<img src="/posts/hexo-theme-Peomas/theme_config.jpg" class="">
+</li>
+<li><p>针对Category和Tag，原作者提供的命令会和提供的其他主题默认文件无法适配,此处请用<code>hexo new page categories</code>和<code>hexo new page tags</code></p>
+</li>
+<li><p>主页中的文章标题前面会有个图片的引用(如下图)，关于这部分原作者并未提及（也有可能是我没找到，难顶），解析了html源代码后得出结论:在<strong>md文章头部添加img_src字段</strong>即可，example：img_src: posts&#x2F;hexo-theme-Peomas&#x2F;hexo_themes.jpg（以上是我自己在使用的时候的引用方式，这样可以方便图片直接放在资源文件夹中管理,建议图片尺寸为1600*640）</p>
+<img src="/posts/hexo-theme-Peomas/picture.jpg" class=""></li>
+</ol>
 
   </div>
 
